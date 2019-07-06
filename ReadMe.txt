@@ -1,0 +1,2 @@
+MeArm Control
+This project focuses on developing an user interface for the control of the MeArm. The primary focus is on deveoping a mathematical model of the given robot and then developing an application that communicates with the microcontroller in order to control the robot.
