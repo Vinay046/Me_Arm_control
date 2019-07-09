@@ -9,13 +9,11 @@ def toggle(icycle=itertools.cycle(['Release','Grab'])):
     button1['text'] = str(state)
     message = '@'+str(w1.get())+","+str(w2.get())+","+str(w3.get())+","+button1['text']+'!'
     ser.write(message.encode())
-    print(message)
-
+    
 def show_values(self):
     message = "@"+str(w1.get())+","+str(w2.get())+","+str(w3.get())+","+button1['text']+"!"
     ser.write(message.encode())
-    print(message)
-
+    
 master = tk.Tk()
 
 master.geometry("700x250")
