@@ -10,13 +10,11 @@ def toggle(icycle=itertools.cycle(['Release','Grab'])):
     message = '@'+str(w1.get())+","+str(w2.get())+","+str(w3.get())+","+button1['text']+'!'
     ser.write(message.encode())
     print(message)
-    print(ser.readline())
 
 def show_values(self):
     message = "@"+str(w1.get())+","+str(w2.get())+","+str(w3.get())+","+button1['text']+"!"
     ser.write(message.encode())
     print(message)
-    print(ser.readline())
 
 master = tk.Tk()
 
