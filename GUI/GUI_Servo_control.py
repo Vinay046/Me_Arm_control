@@ -2,20 +2,21 @@ import tkinter as tk
 import itertools
 import serial
 
-#ser = serial.Serial('COM3',9600)
-global button_state 
+ser = serial.Serial('COM3',9600)
 
 def toggle(icycle=itertools.cycle(['Release','Grab'])):
     state = next(icycle)
     button1['text'] = str(state)
-    message = "@"+str(w1.get())+","+str(w2.get())+","+str(w3.get())+","+button1['text']+"!"
-    #ser.write(message.encode())
+    message = '@'+str(w1.get())+","+str(w2.get())+","+str(w3.get())+","+button1['text']+'!'
+    ser.write(message.encode())
     print(message)
+    print(ser.readline())
 
 def show_values(self):
-    message = "@"+str(w1.get())+","+str(w2.get())+","+str(w3.get())+button1['text']+"!"
-    #ser.write(message.encode())
+    message = "@"+str(w1.get())+","+str(w2.get())+","+str(w3.get())+","+button1['text']+"!"
+    ser.write(message.encode())
     print(message)
+    print(ser.readline())
 
 master = tk.Tk()
 
