@@ -7,7 +7,7 @@ Servo base,left,right,grabber;
 void setup() 
 {
   base.attach(5);
-  base.write(0);
+  base.write(90);
   
   left.attach(6);
   left.write(0);
@@ -44,11 +44,11 @@ void loop()
         right.write(angle3);
         if(state == "Release")
         {
-          grabber.write(40);   
+          grabber.write(123);   
         }
         else
         {
-          grabber.write(100);
+          grabber.write(70);
         }
       }
       inData = "";
