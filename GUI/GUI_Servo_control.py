@@ -22,15 +22,15 @@ master.resizable(0,0)
 master.title("Servo Angle Control")
 
 w1 = tk.Scale(master, from_=0, to=180,length = 600,tickinterval=90, orient=tk.HORIZONTAL,command = show_values)
-w1.set(0)
+w1.set(90)
 w1.pack()
 
 w2 = tk.Scale(master, from_=0, to=180,length = 600,tickinterval=90, orient=tk.HORIZONTAL,command = show_values)
-w2.set(0)
+w2.set(90)
 w2.pack()
 
 w3 = tk.Scale(master, from_=0, to=180,length = 600,tickinterval=90, orient=tk.HORIZONTAL,command = show_values)
-w3.set(0)
+w3.set(90)
 w3.pack()
 
 button1 = tk.Button(master,text = 'Grab', command=toggle)

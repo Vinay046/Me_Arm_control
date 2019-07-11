@@ -10,13 +10,13 @@ void setup()
   base.write(90);
   
   left.attach(6);
-  left.write(0);
+  left.write(90);
   
   right.attach(9);
   right.write(9);
   
   grabber.attach(10);
-  grabber.write(0);
+  grabber.write(90);
   
   Serial.begin(9600);
 }
