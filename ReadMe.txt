@@ -11,3 +11,12 @@ This iteration consists:-
 - The angles generated on the GUI are packed in a string and sent to the micro-controller via a serial port
 - The angles are parsed from the string received from the PC
 - Corresponding functions are executed based on the string received.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+********************************************************************************************   Version 2   **************************************************************************************************************
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+This iteration consists:-
+- Inverse Kinematics for the robot is implemented.
+- The GUI allows the uses to change x,y and z coordinates.
+- Based on the coordinates the grabber position is changed.
