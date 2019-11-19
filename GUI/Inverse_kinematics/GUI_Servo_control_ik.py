@@ -4,7 +4,7 @@ import serial
 from inverse import *
 
 
-#ser = serial.Serial('COM3',9600)
+ser = serial.Serial('COM3',9600)
 
 angles_to_send = [0,0,0]
 
@@ -13,22 +13,14 @@ def toggle(icycle=itertools.cycle(['Release','Grab'])):
     button1['text'] = str(state)
     inverse_kin(w1.get(),w2.get(),w3.get(),angles_to_send)
     message = "@"+str(math.degrees(angles_to_send[0]))+","+str(math.degrees(angles_to_send[1])+90)+","+str(math.degrees(angles_to_send[2])+90)+","+button1['text']+"!"
-<<<<<<< HEAD
+    #print(message)
     ser.write(message.encode())
-=======
-    print(message)
-    #ser.write(message.encode())
->>>>>>> 564b903e9bdca24e7842ef48ef88866eec736fad
 
 def show_values(self):
 	inverse_kin(w1.get(),w2.get(),w3.get(),angles_to_send)
 	message = "@"+str(math.degrees(angles_to_send[0]))+","+str(math.degrees(angles_to_send[1])+90)+","+str(math.degrees(angles_to_send[2])+90)+","+button1['text']+"!"
-<<<<<<< HEAD
+	#print(message)
 	ser.write(message.encode())
-=======
-	print(message)
-	#ser.write(message.encode())
->>>>>>> 564b903e9bdca24e7842ef48ef88866eec736fad
     
 
 master = tk.Tk()
