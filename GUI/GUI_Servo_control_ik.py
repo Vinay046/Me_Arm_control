@@ -16,13 +16,11 @@ def toggle(icycle=itertools.cycle(['Release','Grab'])):
     button1['text'] = str(state)
     inverse_kin(w1.get(),w2.get(),w3.get(),angles_to_send)
     message = "@"+str(math.degrees(angles_to_send[0]))+","+str(math.degrees(angles_to_send[1])+90)+","+str(math.degrees(angles_to_send[2])+90)+","+button1['text']+"!"
-    #print(message)
     ser.write(message.encode())
 
 def show_values(self):
 	inverse_kin(w1.get(),w2.get(),w3.get(),angles_to_send)
 	message = "@"+str(math.degrees(angles_to_send[0]))+","+str(math.degrees(angles_to_send[1])+90)+","+str(math.degrees(angles_to_send[2])+90)+","+button1['text']+"!"
-	#print(message)
 	ser.write(message.encode())
     
 def cart2polar(x,y):
